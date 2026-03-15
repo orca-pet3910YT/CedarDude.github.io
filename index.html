@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="CedarOS: a lite, free, open source operating system from scratch.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cedar OS - Home</title>
     <style>
         body {
-            background-color: #ffffff;
-            color: #222222;
+            background-color: #070707;
+            color: #dddddd;
             font-family: monospace;
             text-align: center;
             padding: 50px 20px;
@@ -20,29 +21,33 @@
 
         h1 {
             font-size: 3rem;
-            color: #000000;
+            color: #ffffff;
             text-decoration: underline;
         }
 
         h2 {
             margin-top: 40px;
-            color: #000000;
+            color: #ffffff;
         }
 
         .warning-box {
             border: 2px solid #cc0000;
             padding: 20px;
             margin: 20px 0;
-            background: #fff0f0;
-            color: #aa0000;
+            background: #eee0e0;
+            color: #bb0000;
         }
 
         .info-box {
-            border: 2px solid #999999;
+            border: 2px solid #777777;
             padding: 20px;
             margin: 20px 0;
             background: #f4f4f4;
             color: #444444;
+        }
+
+        .note-text {
+            color: #000000;
         }
 
         .btn {
@@ -63,8 +68,8 @@
         }
 
         code {
-            background: #eeeeee;
-            color: #006600;
+            background: #333333;
+            color: #009900;
             padding: 5px;
             display: inline-block;
             margin-top: 5px;
@@ -83,7 +88,11 @@
         }
         
         strong {
-            color: #000000;
+            color: #ffffff;
+        }
+
+        bold {
+            color: #ffffff;
         }
     </style>
 </head>
@@ -93,11 +102,11 @@
         <p>A Lite, Free, Open Source Operating System, Made From Scratch.</p>
 
         <div class="info-box">
-            <strong>Note:</strong> This OS is in pre-release, it will improve over time.
+            <strong class="note-text">NOTE:</strong> This OS is in pre-release, it will improve over time.
         </div>
 
         <div class="warning-box">
-            <strong>WARNING:</strong> This OS may be unstable on real computers. 
+            <strong class="note-text">WARNING:</strong> This OS may be unstable on real computers. 
             Try to run in QEMU as we still have not tested it on real hardware.
         </div>
 
