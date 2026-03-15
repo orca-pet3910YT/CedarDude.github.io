@@ -69,6 +69,7 @@
             display: inline-block;
             margin-top: 5px;
             border: 1px solid #cccccc;
+            text-align: left;
         }
 
         pre {
@@ -78,6 +79,7 @@
             padding: 15px;
             border: 1px solid #bbbbbb;
             overflow-x: auto;
+            text-wrap: wrap;
         }
         
         strong {
@@ -86,7 +88,6 @@
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>Cedar-OS</h1>
         <p>A Lite, Free, Open Source Operating System, Made From Scratch.</p>
@@ -108,22 +109,22 @@
         <hr>
 
         <h2>How to Compile</h2>
-        <p>Written in x86 Assembly and C. Requires <code>NASM</code>.</p>
+        <p>Written in x86 assembly and C. Requires <bold>NASM</bold>.</p>
         <pre># Run the build script
 ./build.sh</pre>
 
         <h2>How to Run</h2>
-        <p>Use QEMU to run the virtual machine. Turning it into an ISO for <bold>vmware or real hardware </bold>isnt avaible and not recommended yet.</p>
+        <p>Use QEMU to run the virtual machine. Turning it into an ISO for <bold>VMware or real hardware</bold> is not recommended yet.</p>
         
         <p><strong>Standard Run:</strong></p>
-        <code>qemu-system-i386 -fda build/cedar.img</code>
+        <pre>qemu-system-i386 -fda build/cedar.img</pre>
 
         <p><strong>Debug:</strong></p>
-        <code>qemu-system-i386 -fda build/cedar.img -d int -D fresh_test.txt -M smm=off -no-reboot -no-shutdown</code>
+        <pre>qemu-system-i386 -fda build/cedar.img -d int -D fresh_test.txt -M smm=off -no-reboot -no-shutdown</pre>
     </div>
 
-    <footer style="margin-top: 20px; font-size: 0.8rem; background-color: #008689; color: white;">
-        <p>Cedar Operating System Project - 2026 &copy;, all right reserved.</br></p>
+    <footer style="margin-top: 20px; font-size: 0.8rem; background-color: #008689; color: white; padding: 2px;">
+        <p>Cedar Operating System Project - 2026 &copy;, all rights reserved.</br></p>
     </footer>
 
 </body>
